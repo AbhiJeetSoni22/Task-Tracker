@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const baseUrl = import.meta.env.VITE_BACKEND_URL;
@@ -115,12 +115,12 @@ const Login = () => {
                     </div>
 
                     <div className="mt-6">
-                        <a
-                            href="/signup"
+                        <Link
+                            to="/signup"
                             className="w-full flex justify-center py-2.5 px-4 rounded-xl border border-gray-300 dark:border-zinc-600 bg-white dark:bg-zinc-700 text-gray-700 dark:text-white font-medium hover:bg-gray-50 dark:hover:bg-zinc-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition"
                         >
                             Create new account
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
