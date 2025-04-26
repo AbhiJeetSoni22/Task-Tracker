@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 const taskSchema = new mongoose.Schema({
     projectId: { type: mongoose.Schema.Types.ObjectId, ref: 'Project' },
     title: String,
